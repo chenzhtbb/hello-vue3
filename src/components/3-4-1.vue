@@ -1,6 +1,14 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2023-10-07 09:58:28
+ * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditTime: 2023-10-07 23:11:30
+ * @FilePath: /hello-vue3/src/components/3-4-1.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <h1>3.4.1 v-model 指令</h1>
-  <p><n-text type="primary">v-model</n-text> 指令绑定的属性是单向的，变量单向传递到属性中，例如下面的例子</p>
+  <p><n-text type="primary">v-bind</n-text> 指令绑定的属性是单向的，变量单向传递到属性中，例如下面的例子</p>
   <n-code language="html" :code="`<p>Message is: {{ msg }}</p>
 <input :value='msg'>`"></n-code>
   <p>Message is: {{ msg }}</p>
