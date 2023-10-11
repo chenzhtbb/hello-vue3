@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenzhtbb chenzhtbb@163.com
+ * @Date: 2023-10-07 09:58:28
+ * @LastEditors: chenzhtbb chenzhtbb@163.com
+ * @LastEditTime: 2023-10-11 22:49:09
+ * @FilePath: /hello-vue3/src/components/3-1-3.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <h1>3.1.3 HTML 插值</h1>
   <p>双大括号会将数据解释为纯文本，而不是 HTML。若想插入 HTML，你需要使用 <n-text type="primary">v-html</n-text> 指令</p>
@@ -29,6 +37,9 @@ const rawHtml = ref(\`
 <script setup>
 import { ref } from 'vue';
 
+defineOptions({
+    inheritAttrs: false
+})
 const rawHtml = ref(`
 <span>Hello HTML 插值</span>
 `)

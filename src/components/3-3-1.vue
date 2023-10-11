@@ -50,6 +50,9 @@ const fileName = 'welcome.png'
 </template> -->
 
 <script setup>
+defineOptions({
+    inheritAttrs: false
+})
 import welcome from '@/assets/img/welcome.png';
 
 const imgSrc = welcome

@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenzhtbb chenzhtbb@163.com
+ * @Date: 2023-10-07 09:58:28
+ * @LastEditors: chenzhtbb chenzhtbb@163.com
+ * @LastEditTime: 2023-10-11 22:47:54
+ * @FilePath: /hello-vue3/src/components/3-6-4.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <h1>3.6.4 列表渲染的 key</h1>
   <p>Vue 默认按照“就地更新”的策略来更新通过 <n-text type="primary">v-for</n-text> 渲染的元素列表。当数据项的顺序改变时，Vue 不会随之移动 DOM
@@ -12,6 +20,9 @@
 </template>
 
 <script setup>
+defineOptions({
+    inheritAttrs: false
+})
 const code1 = `<div v-for="item in items" :key="item.id">
   <!-- 内容 -->
 </div>`

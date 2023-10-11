@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenzhtbb chenzhtbb@163.com
+ * @Date: 2023-10-07 09:58:28
+ * @LastEditors: chenzhtbb chenzhtbb@163.com
+ * @LastEditTime: 2023-10-11 22:49:34
+ * @FilePath: /hello-vue3/src/components/2-2-4.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <h1>2.2.4 数据</h1>
   <p>Vue 3 中所有的变量都应该使用下述的三个函数来创建</p>
@@ -57,4 +65,8 @@ stateAsRefs.foo.value++
 console.log(state.foo) // 3`" />
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+    inheritAttrs: false
+})
+</script>

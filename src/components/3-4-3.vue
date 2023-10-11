@@ -58,6 +58,9 @@
 
 <script setup>
 import { ref } from 'vue';
+defineOptions({
+    inheritAttrs: false
+})
 
 const name = ref('')
 const sex = ref('')

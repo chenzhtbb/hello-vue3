@@ -64,6 +64,9 @@ watch(
 <script setup>
 import { reactive, ref, watch } from 'vue';
 
+defineOptions({
+    inheritAttrs: false
+})
 const data = reactive({
   num: 1
 })

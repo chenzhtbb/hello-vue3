@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenzhtbb chenzhtbb@163.com
+ * @Date: 2023-10-10 20:35:48
+ * @LastEditors: chenzhtbb chenzhtbb@163.com
+ * @LastEditTime: 2023-10-11 22:46:59
+ * @FilePath: /hello-vue3/src/components/js-6.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <h2>函数</h2>
   <n-code language="js" :code="`function functionname()
@@ -65,4 +73,8 @@ else
   <p>HTML 事件是发生在 HTML 元素上的事情。当在 HTML 页面中使用 JavaScript 时， JavaScript 可以触发这些事件。</p>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+    inheritAttrs: false
+})
+</script>

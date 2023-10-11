@@ -32,6 +32,9 @@ const { b, c } = toRefs(state)
 <script setup>
 import { reactive, ref, toRefs } from 'vue'
 
+defineOptions({
+    inheritAttrs: false
+})
 const a = ref(2)
 const state = reactive({
   b: 3,

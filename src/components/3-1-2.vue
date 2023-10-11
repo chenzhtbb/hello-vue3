@@ -5,6 +5,9 @@
 </template>
 
 <script setup>
+defineOptions({
+    inheritAttrs: false
+})
 const props = defineProps(['modelValue'])
 const emit = defineEmits(['update:modelValue'])
 const handleClick = () => emit('update:modelValue', '5-1')

@@ -6,4 +6,8 @@
   </p>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+    inheritAttrs: false
+})
+</script>

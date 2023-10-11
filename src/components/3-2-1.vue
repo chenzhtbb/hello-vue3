@@ -124,6 +124,9 @@ const addBtn = () => {
 <script setup>
 import { computed, ref } from 'vue';
 
+defineOptions({
+    inheritAttrs: false
+})
 const num = ref(1)
 
 const double = computed(function () {

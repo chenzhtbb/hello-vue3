@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenzhtbb chenzhtbb@163.com
+ * @Date: 2023-10-10 20:35:48
+ * @LastEditors: chenzhtbb chenzhtbb@163.com
+ * @LastEditTime: 2023-10-11 22:46:36
+ * @FilePath: /hello-vue3/src/components/js-3.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <h2>JavaScript 变量</h2>
   <p>变量可以使用短名称（比如 x 和 y），也可以使用描述性更好的名称（比如 age, sum, totalvolume）。</p>
@@ -18,6 +26,9 @@
 </template>
 
 <script setup>
+defineOptions({
+    inheritAttrs: false
+})
 const code1 = `let x;          // x 为 undefinedvar 
 x = 5;          // 现在 x 为数字
 let x = "John"; // 现在 x 为字符串`

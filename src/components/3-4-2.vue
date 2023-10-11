@@ -1,8 +1,8 @@
 <!--
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2023-10-07 09:58:28
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2023-10-07 23:13:41
+ * @LastEditors: chenzhtbb chenzhtbb@163.com
+ * @LastEditTime: 2023-10-11 22:48:27
  * @FilePath: /hello-vue3/src/components/3-4-2.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -30,6 +30,9 @@
 
 <script setup>
 import { ref } from 'vue';
+defineOptions({
+    inheritAttrs: false
+})
 
 const code1 = `<!-- 在 "change" 事件后同步更新而不是 "input" -->
 <input v-model.lazy="msg" />`

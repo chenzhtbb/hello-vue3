@@ -32,6 +32,9 @@
 
 <script setup>
 import { reactive, ref, toRefs } from 'vue'
+defineOptions({
+    inheritAttrs: false
+})
 const props = defineProps(['modelValue'])
 const emit = defineEmits(['update:modelValue'])
 const handleClick = () => emit('update:modelValue', '2-2-5')

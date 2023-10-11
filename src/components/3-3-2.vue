@@ -77,6 +77,9 @@ const fontSize = ref(30)`"></n-code>
 
 <script setup>
 import { computed, ref } from 'vue';
+defineOptions({
+    inheritAttrs: false
+})
 
 const isActive = ref(true)
 const hasError = ref(false)

@@ -69,6 +69,9 @@ const changeBtn = () => {
 </template>
 
 <script setup>
+defineOptions({
+    inheritAttrs: false
+})
 import { computed, ref } from 'vue';
 
 const num = ref(1)

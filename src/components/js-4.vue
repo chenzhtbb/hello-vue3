@@ -1,3 +1,11 @@
+<!--
+ * @Author: chenzhtbb chenzhtbb@163.com
+ * @Date: 2023-10-10 20:35:48
+ * @LastEditors: chenzhtbb chenzhtbb@163.com
+ * @LastEditTime: 2023-10-11 22:46:48
+ * @FilePath: /hello-vue3/src/components/js-4.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <template>
   <h2>对象</h2>
   <p>JavaScript 中的所有事物都是对象：字符串、数值、数组、函数...此外，JavaScript 允许自定义对象。</p>
@@ -34,4 +42,8 @@ person.eyecolor="blue";`'></n-code>
   <n-code language="js" :code="`{ name1 : value1, name2 : value2,...nameN : valueN }`"></n-code>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+    inheritAttrs: false
+})
+</script>

@@ -24,6 +24,9 @@ const items = ref([{ message: 'Foo' }, { message: 'Bar' }])`"></n-code>
 <script setup>
 import { ref } from 'vue';
 
+defineOptions({
+    inheritAttrs: false
+})
 const code1items = ref([{ message: 'Foo' }, { message: 'Bar' }])
 const code1 = `<li v-for="item in items">
   {{ item.message }}
