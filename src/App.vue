@@ -251,39 +251,41 @@ const options = [
         ]
       },
     ]
-  }, {
-    value: '4',
-    label: '第4章',
-    children: [
-      {
-        value: '4-1',
-        label: '4.1 绑定 HTML class',
-        children: [
-          {
-            value: '4-1-1',
-            label: '4.1.1 对象语法'
-          },
-          {
-            value: '4-1-2',
-            label: '4.1.2 数组语法'
-          }
-        ]
-      }, {
-        value: '4-2',
-        label: '4.2 绑定内联样式',
-        children: [
-          {
-            value: '4-2-1',
-            label: '4.2.1 对象语法'
-          },
-          {
-            value: '4-2-2',
-            label: '4.2.2 数组语法'
-          }
-        ]
-      },
-    ]
-  }, {
+  },
+  //{
+  // value: '4',
+  // label: '第4章',
+  // children: [
+  //   {
+  //     value: '4-1',
+  //     label: '4.1 绑定 HTML class',
+  //     children: [
+  //       {
+  //         value: '4-1-1',
+  //         label: '4.1.1 对象语法'
+  //       },
+  //       {
+  //         value: '4-1-2',
+  //         label: '4.1.2 数组语法'
+  //       }
+  //     ]
+  //   }, {
+  //     value: '4-2',
+  //     label: '4.2 绑定内联样式',
+  //     children: [
+  //       {
+  //         value: '4-2-1',
+  //         label: '4.2.1 对象语法'
+  //       },
+  //       {
+  //         value: '4-2-2',
+  //         label: '4.2.2 数组语法'
+  //       }
+  //     ]
+  //   },
+  // ]
+  // }, 
+  {
     value: '5',
     label: '第5章',
     children: [
