@@ -301,10 +301,10 @@ const options = [
             value: '5-1-2',
             label: '5.1.2 json 过滤器'
           },
-          {
-            value: '5-1-3',
-            label: '5.1.3 限制过滤器'
-          },
+          // {
+          //   value: '5-1-3',
+          //   label: '5.1.3 限制过滤器'
+          // },
           {
             value: '5-1-4',
             label: '5.1.4 currency 过滤器'
@@ -328,8 +328,8 @@ const options = [
             value: '7-1-1',
             label: '7.1.1 全局注册'
           }, {
-            value: '7-1-1',
-            label: '7.1.1 局部注册'
+            value: '7-1-2',
+            label: '7.1.2 局部注册'
           },
         ]
       }, {

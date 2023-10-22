@@ -8,7 +8,12 @@
 -->
 <template>
     <div>
-        {{ filterBy([1,2,3], ()=>('i' in [2])) }}
+        <h1>限制过滤器</h1>
+        <p>限制过滤器本质上是循环语句的封装</p>
+        <p>limitBy 过滤器返回该数组的前 N 项</p>
+        <p>filterBy 过滤器是过滤字段</p>
+        <p>orderBy 过滤器是排序</p>
+        <!-- {{ filterBy([1,2,3], ()=>('i' in [2])) }} -->
     </div>
 </template>
 

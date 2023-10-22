@@ -8,7 +8,7 @@
 -->
 <template>
     <h1>5.1.5 debounce 过滤器 （防抖）</h1>
-    <p>debounce 过滤器的回调函数会延迟到这个调用之后 X 毫秒执行，如果响应函数在延迟执行之前再次被调用，则延迟时间会被重置为 X 毫秒。</p>
+    <p>debounce 过滤器的回调函数会延迟到这个调用之后 X 毫秒执行，如果响应函数在延迟执行之前再次被调用，则延迟时间会被重置为 X 毫秒。本节算法是 debounce 的高阶函数实现。</p>
     <n-button @click="dialog0('按下立即弹窗')">按下立即弹窗</n-button>
     <br>
     <br>
@@ -27,7 +27,7 @@ defineOptions({
 })
 const { debounce } = useDebounce()
 const dialog = function (msg) {
-    console.log(msg);
+    alert(msg);
 }
 const dialog0 = debounce(dialog, 0)
 const dialog2 = debounce(dialog, 2000)
@@ -64,12 +64,10 @@ export default () => {
 
 const code2 = `
 import useDebounce from '@/utils/useDebounce.js'
-defineOptions({
-    inheritAttrs: false
-})
+
 const { debounce } = useDebounce()
 const dialog = function (msg) {
-    console.log(msg);
+    alert(msg);
 }
 const dialog0 = debounce(dialog, 0)
 const dialog2 = debounce(dialog, 2000)
