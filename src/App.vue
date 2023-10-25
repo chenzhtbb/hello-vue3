@@ -614,6 +614,7 @@ const options = [
 <style scoped>
 .main {
   padding-left: 100px;
+  padding-right: 100px;
 }
 
 .box {
