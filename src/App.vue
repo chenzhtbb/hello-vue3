@@ -22,9 +22,11 @@ import { zhCN } from 'naive-ui'
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 import html from 'highlight.js/lib/languages/xml'
+import bash from 'highlight.js/lib/languages/bash'
 import { onMounted, watch, ref, computed, defineAsyncComponent } from 'vue';
 hljs.registerLanguage('js', javascript)
 hljs.registerLanguage('html', html)
+hljs.registerLanguage('bash', bash)
 
 const __ROUTER_STORE__ = '__ROUTER_STORE__'
 
@@ -383,9 +385,6 @@ const options = [
             label: '7.4.2 <keep-alive>'
           },
         ]
-      }, {
-        value: '7-5',
-        label: '7.5 组件案例：完善标签页组件',
       }
     ]
   }, {
