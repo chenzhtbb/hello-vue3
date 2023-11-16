@@ -18,7 +18,7 @@
     <span style="padding-left: 16px;">小数位数: </span>
     <input type="number" v-model.number="len">
     <p>currency 过滤器的实现如下</p>
-    <n-code language="js" :code="code1"></n-code>
+    <n-code word-wrap language="js" :code="code1"></n-code>
 </template>
 
 <script setup>

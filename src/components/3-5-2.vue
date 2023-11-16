@@ -9,12 +9,12 @@
 <template>
   <h1>3.5.2 v-show 指令</h1>
   <p>基于表达式值的真假性，来改变元素的可见性。<n-text type="info">v-show</n-text> 通过设置内联样式的 display CSS 属性来工作，当元素可见时将使用初始 display 值。</p>
-  <n-code language="html" :code="`<h1 v-show='ok'>Hello!</h1>`"></n-code>
+  <n-code word-wrap language="html" :code="`<h1 v-show='ok'>Hello!</h1>`"></n-code>
   <n-divider title-placement="left">显示效果</n-divider>
   <button @click="ok = !ok">Toggle</button>
   <h1 v-show='ok'>Hello!</h1>
   <n-divider title-placement="left">渲染效果</n-divider>
-  <n-code language="html" :code="code1"></n-code>
+  <n-code word-wrap language="html" :code="code1"></n-code>
 </template>
 
 <script setup>

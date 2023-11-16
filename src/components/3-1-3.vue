@@ -13,11 +13,11 @@
       type="primary">v-</n-text> 作为前缀，表明它们是一些由 Vue 提供的特殊 attribute</n-blockquote>
   <n-tabs type="line" animated>
     <n-tab-pane name="fun1" tab="template">
-      <n-code language="html" :code="`<p>文本插值：{{ rawHtml }}</p>
+      <n-code word-wrap language="html" :code="`<p>文本插值：{{ rawHtml }}</p>
 <p>HTML 插值：<div v-html='rawHtml'></div></p>`" />
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="script">
-      <n-code show-line-numbers language="js" :code="`import { ref } from 'vue';
+      <n-code word-wrap show-line-numbers language="js" :code="`import { ref } from 'vue';
 
 const rawHtml = ref(\`
 <span>Hello HTML 插值</span>

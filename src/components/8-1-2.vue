@@ -5,17 +5,17 @@
     <h2>2. 创建路由</h2>
     <p>在 src 目录下创建 router 目录，并在其中创建 index.js 文件。然后按照以下步骤进行：</p>
     <h3>2.1 导入 createRouter</h3>
-    <n-code language="js" :code="code1"></n-code>
+    <n-code word-wrap language="js" :code="code1"></n-code>
     <h3>2.2 定义路由</h3>
-    <n-code language="js" :code="code2"></n-code>
+    <n-code word-wrap language="js" :code="code2"></n-code>
     <h3>2.3 创建路由实例并注册路由</h3>
-    <n-code language="js" :code="code3"></n-code>
+    <n-code word-wrap language="js" :code="code3"></n-code>
     <h3>2.4 导出路由</h3>
-    <n-code language="js" :code="code4"></n-code>
+    <n-code word-wrap language="js" :code="code4"></n-code>
     <h2>3. 在 main.js 中导入路由</h2>
-    <n-code language="js" :code="code5"></n-code>
+    <n-code word-wrap language="js" :code="code5"></n-code>
     <h2>4. 在 main.js 中注册路由</h2>
-    <n-code language="js" :code="code6"></n-code>
+    <n-code word-wrap language="js" :code="code6"></n-code>
 </template>
 
 <script setup>

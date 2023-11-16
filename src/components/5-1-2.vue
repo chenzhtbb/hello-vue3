@@ -11,13 +11,13 @@
     <h1>5.1.2 json 过滤器</h1>
     <p>JSON 是一种语法，用来序列化对象、数组、数值、字符串、布尔值和 null 。</p>
     <p>假设有以下对象</p>
-    <n-code language="js" :code="code1"></n-code>
+    <n-code word-wrap language="js" :code="code1"></n-code>
     <p>可以使用 json 过滤器将其序列化为 JSON 字符串</p>
-    <n-code language="html" :code="code2"></n-code>
+    <n-code word-wrap language="html" :code="code2"></n-code>
     <p>序列化后的结果如下</p>
     <pre>{{ json(obj1, 2) }}</pre>
     <p>json 过滤器的实现如下，其中参数 space 锁进空格数量，最小为1，最大为10</p>
-    <n-code language="js" :code="code3"></n-code>
+    <n-code word-wrap language="js" :code="code3"></n-code>
 </template>
 
 <script setup>

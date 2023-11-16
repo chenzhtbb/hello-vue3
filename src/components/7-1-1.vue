@@ -6,7 +6,7 @@
     <p>现在，我们通过 npm 来安装 element-plus 组件库</p>
     <n-text code>npm install element-plus --save</n-text>
     <p>执行完上述指令后，在 main.js 文件中进行全局注册</p>
-    <n-code language="js" :code="code1"></n-code>
+    <n-code word-wrap language="js" :code="code1"></n-code>
     <p>在组件(所有 *.vue 文件都是一个Vue的组件 )中使用 element-plus 组件</p>
     <h2>element-plus 使用示例</h2>
     <h3>Button 组件</h3>

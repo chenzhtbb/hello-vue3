@@ -3,7 +3,7 @@
   <p><n-text type="info">计算属性</n-text>通常用于描述依赖响应式状态的复杂逻辑。例如，我们有这样一份代码：</p>
   <n-tabs type="line" animated>
     <n-tab-pane name="fun1" tab="普通函数：App.vue">
-      <n-code show-line-numbers language="html" :code="`
+      <n-code word-wrap show-line-numbers language="html" :code="`
   <template>
     <p>num：{{ num }}</p>
     <p>double：{{ num * 2 }}</p>
@@ -11,7 +11,7 @@
   <button @click='addBtn'>num + 1</button>
 </template>
 `" />
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { ref } from 'vue';
 
 const num = ref(1)
@@ -22,7 +22,7 @@ function addBtn() {
 </script>`" />
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="箭头函数：App.vue">
-      <n-code show-line-numbers language="html" :code="`
+      <n-code word-wrap show-line-numbers language="html" :code="`
   <template>
     <p>num：{{ num }}</p>
     <p>double：{{ num * 2 }}</p>
@@ -30,7 +30,7 @@ function addBtn() {
   <button @click='addBtn'>num + 1</button>
 </template>
 `" />
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { ref } from 'vue';
 
 const num = ref(1)
@@ -52,7 +52,7 @@ const addBtn = () => {
   <p>因此我们推荐使用<n-text type="info">计算属性</n-text>来描述依赖响应式状态的复杂逻辑。这是重构后的示例：</p>
   <n-tabs type="line" animated>
     <n-tab-pane name="fun1" tab="普通函数：App.vue">
-      <n-code show-line-numbers language="html" :code="`
+      <n-code word-wrap show-line-numbers language="html" :code="`
   <template>
   <p>num：{{ num }}</p>
   <p>double：{{ double }}</p>
@@ -60,7 +60,7 @@ const addBtn = () => {
   <button @click='addBtn'>num + 1</button>
 </template>
 `" />
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { computed, ref } from 'vue';
 
 const num = ref(1)
@@ -79,7 +79,7 @@ function addBtn() {
 </script>`" />
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="箭头函数：App.vue">
-      <n-code show-line-numbers language="html" :code="`
+      <n-code word-wrap show-line-numbers language="html" :code="`
   <template>
   <p>num：{{ num }}</p>
   <p>double：{{ double }}</p>
@@ -87,7 +87,7 @@ function addBtn() {
   <button @click='addBtn'>num + 1</button>
 </template>
 `" />
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { computed, ref } from 'vue';
 
 const num = ref(1)

@@ -1,9 +1,9 @@
 <template>
     <h1>7.4.1 动态组件的基本用法</h1>
     <p>Vue 支持动态组件，可以多个组件使用同一挂载点，根据条件动态的切换不同的组件。通过使用标签 &lt;component&gt; 绑定到 is 属性的值来判断挂载哪个组件。动态组件的基础用法如下代码所示：</p>
-    <n-code language="html" :code="code1"></n-code>
+    <n-code word-wrap language="html" :code="code1"></n-code>
     <br>
-    <n-code language="js" :code="code2"></n-code>
+    <n-code word-wrap language="js" :code="code2"></n-code>
     <el-card>
         <el-select v-model="selected">
             <el-option v-for="option in options" :key="option.value" :="option"></el-option>

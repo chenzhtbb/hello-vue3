@@ -5,14 +5,14 @@
   <p>下例中创建了一个可读可写的计算属性 tripple ，它的值会保持为 num 的三倍。单击按钮会将 tripple 的值变为 9 。此时，num 的值会变为 3 。</p>
   <n-tabs type="line" animated>
     <n-tab-pane name="fun1" tab="普通函数：App.vue">
-      <n-code show-line-numbers language="html" :code="`
+      <n-code word-wrap show-line-numbers language="html" :code="`
   <template>
   <p>num：{{ num }}</p>
   <p>tripple：{{ tripple }}</p>
   <button @click='changeBtn'>9</button>
 </template>
 `" />
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { computed, ref } from 'vue';
 
 const num = ref(1)
@@ -32,14 +32,14 @@ const changeBtn = function () {
 </script>`" />
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="箭头函数：App.vue">
-      <n-code show-line-numbers language="html" :code="`
+      <n-code word-wrap show-line-numbers language="html" :code="`
   <template>
   <p>num：{{ num }}</p>
   <p>tripple：{{ tripple }}</p>
   <button @click='changeBtn'>9</button>
 </template>
 `" />
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { computed, ref } from 'vue';
 
 const num = ref(3)

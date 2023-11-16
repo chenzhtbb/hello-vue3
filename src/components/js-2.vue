@@ -18,17 +18,17 @@
   <h2>JavaScript 字面量</h2>
   <p>在编程语言中，一般固定值称为字面量，如 3.14。</p>
   <p>数字（Number）字面量 可以是整数或者是小数，或者是科学计数(e)。</p>
-  <n-code language="js" :code="`3.14
+  <n-code word-wrap language="js" :code="`3.14
 1001
 123e5`"></n-code>
   <p>字符串（String）字面量 可以使用单引号或双引号:</p>
-  <n-code language="js" :code="code1"></n-code>
+  <n-code word-wrap language="js" :code="code1"></n-code>
   <p>数组（Array）字面量 定义一个数组：</p>
-  <n-code language="js" :code="`[40, 100, 1, 5, 25, 10]`"></n-code>
+  <n-code word-wrap language="js" :code="`[40, 100, 1, 5, 25, 10]`"></n-code>
   <p>对象（Object）字面量 定义一个对象：</p>
-  <n-code language="js" :code="code2"></n-code>
+  <n-code word-wrap language="js" :code="code2"></n-code>
   <p>函数（Function）字面量 定义一个函数：</p>
-  <n-code language="js" :code="`function myFunction(a, b) {
+  <n-code word-wrap language="js" :code="`function myFunction(a, b) {
   return a * b;
 }`"></n-code>
 </template>

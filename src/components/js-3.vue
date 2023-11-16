@@ -22,7 +22,7 @@
   <p>引用数据类型（对象类型）：对象(Object)、数组(Array)、函数(Function)，还有两个特殊的对象：正则（RegExp）和日期（Date）</p>
   <h2>JavaScript 拥有动态类型</h2>
   <p>JavaScript 拥有动态类型。这意味着相同的变量可用作不同的类型：</p>
-  <n-code language="js" :code="code1"></n-code>
+  <n-code word-wrap language="js" :code="code1"></n-code>
 </template>
 
 <script setup>

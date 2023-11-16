@@ -7,11 +7,11 @@
     <p>或是利用 <strong>defineEmits</strong> 来触发事件</p>
     <p>以 7.2.1 节中<strong>使用示例</strong>代码为运行基础：</p>
     <p>在 components/BlogPost.vue 中编写代码</p>
-    <n-code language="html" :code="code1"></n-code>
-    <n-code language="js" :code="code2"></n-code>
+    <n-code word-wrap language="html" :code="code1"></n-code>
+    <n-code word-wrap language="js" :code="code2"></n-code>
     <p>在 App.vue 中编写代码</p>
-    <n-code language="html" :code="code3"></n-code>
-    <n-code language="js" :code="code4"></n-code>
+    <n-code word-wrap language="html" :code="code3"></n-code>
+    <n-code word-wrap language="js" :code="code4"></n-code>
 </template>
 
 <script setup>

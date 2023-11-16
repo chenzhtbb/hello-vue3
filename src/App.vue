@@ -478,84 +478,57 @@ const options = [
         children: [
           {
             value: '9-1-1',
-            label: '9.1.1 状态管理模式'
+            label: '9.1.1 什么是Pinia'
           }, {
             value: '9-1-2',
             label: '9.1.2 安装 Pinia'
-          }, {
-            value: '9-1-3',
-            label: '9.1.3 Pinia 的基本使用'
-          },
+          }
         ]
       }, {
         value: '9-2',
-        label: '9.2 Pinia 中的状态',
+        label: '9.2 Store',
         children: [
           {
             value: '9-2-1',
-            label: '9.2.1 单一状态树'
+            label: '9.2.1 Store 是什么？'
           }, {
             value: '9-2-2',
-            label: '9.2.2 将 Pinia 状态加入 Vue 组件'
+            label: '9.2.2 应该在什么时候使用 Store?'
           }, {
             value: '9-2-3',
-            label: '9.2.3 mapState 的使用'
-          }, {
-            value: '9-2-4',
-            label: '9.2.4 组件的本地状态'
-          },
+            label: '9.2.3 定义 Store'
+          }
         ]
       }, {
         value: '9-3',
-        label: '9.3 Pinia 中的 getter',
+        label: '9.3 State',
         children: [
           {
             value: '9-3-1',
-            label: '9.3.1 仓库的 getter'
+            label: '9.3.1 访问 state'
           }, {
             value: '9-3-2',
-            label: '9.3.2 属性式访问'
+            label: '9.3.2 重置 state'
           }, {
             value: '9-3-3',
-            label: '9.3.3 方法式访问'
+            label: '9.3.3 变更 state'
           }, {
             value: '9-3-4',
-            label: '9.3.4 mapGetter 的使用'
+            label: '9.3.4 替换 state'
+          }, {
+            value: '9-3-5',
+            label: '9.3.5 订阅 state'
           },
         ]
       }, {
         value: '9-4',
-        label: '9.4 Pinia 中的 mutation',
-        children: [
-          {
-            value: '9-4-1',
-            label: '9.4.1 mutation 的有效负载'
-          }, {
-            value: '9-4-2',
-            label: '9.4.2 通过对象提交'
-          }, {
-            value: '9-4-3',
-            label: '9.4.3 mutation 的同步'
-          },
-        ]
+        label: '9.4 Getter'
       }, {
         value: '9-5',
-        label: '9.5 Pinia 中的 action',
-        children: [
-          {
-            value: '9-5-1',
-            label: '9.5.1 action 的基本使用'
-          }, {
-            value: '9-5-2',
-            label: '9.5.2 调度 action'
-          }, {
-            value: '9-5-3',
-            label: '9.5.3 组成 action'
-          },
-        ]
+        label: '9.5 Action'
       }, {
         value: '9-6',
-        label: '9.6 Pinia 中的模块',
+        label: '9.6 在组件外使用 store',
       },
     ]
   }, {
@@ -575,6 +548,9 @@ const options = [
           }, {
             value: '10-1-3',
             label: '10.1.3 src 文件夹'
+          }, {
+            value: '10-1-4',
+            label: '10.1.4 .gitignore'
           },
         ]
       }, {
@@ -599,11 +575,80 @@ const options = [
           }, {
             value: '10-3-2',
             label: '10.3.2 项目部署'
+          }
+        ]
+      },
+    ]
+  }, {
+    value: '6',
+    label: '第6章',
+    children: [
+      {
+        value: '6-1',
+        label: '6.1 过渡与动画概述',
+        children: [
+          {
+            value: '6-1-1',
+            label: '6.1.1 基于 class 的动画和过渡'
           }, {
-            value: '10-3-3',
-            label: '10.3.3 通过 GitHub Action 自动部署'
+            value: '6-1-2',
+            label: '6.1.2 基于 style 的动画和过渡'
           },
         ]
+      }, {
+        value: '6-2',
+        label: '6.2 单元素过渡',
+        children: [
+          {
+            value: '6-2-1',
+            label: '6.2.1 进入与离开过渡'
+          }, {
+            value: '6-2-2',
+            label: '6.2.2 CSS 过渡与动画'
+          }
+        ]
+      },
+    ]
+  }, {
+    value: 'sz',
+    label: '课程实战',
+    children: [
+      {
+        value: 'zs-1',
+        label: '1. 简单电影网',
+      }, {
+        value: 'zs-2',
+        label: '2. 首页布局设计',
+      }, {
+        value: 'zs-3',
+        label: '3. 首页导航栏',
+      }, {
+        value: 'zs-4',
+        label: '4. 首页轮播图',
+      }, {
+        value: 'zs-5',
+        label: '5. 首页信息流',
+      }, {
+        value: 'zs-6',
+        label: '6. 电影搜索页设计',
+      }, {
+        value: 'zs-7',
+        label: '7. 电影搜索页',
+      }, {
+        value: 'zs-8',
+        label: '8. 电影分类页设计',
+      }, {
+        value: 'zs-9',
+        label: '9. 电影分类页',
+      }, {
+        value: 'zs-10',
+        label: '10. 电影播放页设计',
+      }, {
+        value: 'zs-11',
+        label: '11. 电影播放页',
+      }, {
+        value: 'zs-12',
+        label: '12. 项目打包与部署',
       },
     ]
   },
@@ -630,8 +675,16 @@ const options = [
   font-size: 18px !important;
 }
 
+.__code__ {
+  background-color: var(--el-color-primary-light-9);
+}
+
 img {
   border: 1px solid purple;
   max-height: 20vh;
+}
+
+.n-image-preview {
+  background-color: white;
 }
 </style>

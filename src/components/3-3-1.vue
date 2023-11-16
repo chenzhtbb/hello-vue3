@@ -3,7 +3,7 @@
   <p>动态的绑定一个或多个 attribute，也可以是组件的 prop。</p>
   <n-blockquote>缩写是<n-text code>:</n-text></n-blockquote>
   <p>下述 script 为本例运行基础</p>
-  <n-code show-line-numbers language="js" :code="`<script setup>
+  <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import welcome from '@/assets/img/welcome.png';
 
 const imgSrc = welcome
@@ -12,7 +12,7 @@ const fileName = 'welcome.png'
   <h2>绑定 attribute</h2>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code show-line-numbers language="html" :code="`<template>
+      <n-code word-wrap show-line-numbers language="html" :code="`<template>
   <!-- 绑定 attribute -->
   <img v-bind:src='imgSrc' />
 </template>`"></n-code>
@@ -24,7 +24,7 @@ const fileName = 'welcome.png'
   <h2>缩写</h2>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code show-line-numbers language="html" :code="`<template>
+      <n-code word-wrap show-line-numbers language="html" :code="`<template>
   <!-- 缩写 -->
   <img :src='imgSrc' />
 </template>`"></n-code>
@@ -36,7 +36,7 @@ const fileName = 'welcome.png'
   <h2>内联字符串拼接</h2>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code show-line-numbers language="html" :code="code"></n-code>
+      <n-code word-wrap show-line-numbers language="html" :code="code"></n-code>
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="运行结果">
       <img :src="'/src/assets/img/' + fileName" />

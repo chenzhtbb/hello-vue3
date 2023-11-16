@@ -3,14 +3,14 @@
   <p>修改 App.vue 代码的分别为下面代码</p>
   <n-tabs type="line" animated>
     <n-tab-pane name="fun1" tab="template">
-      <n-code show-line-numbers language="html" :code="`<template>
+      <n-code word-wrap show-line-numbers language="html" :code="`<template>
   <p>{{ a }}</p>
   <p>{{ b }}</p>
   <p>{{ c }}</p>
 </template>`" />
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="script">
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { reactive, ref, toRefs } from 'vue'
 
 const a = ref(2)

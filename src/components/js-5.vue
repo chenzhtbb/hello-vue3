@@ -13,22 +13,22 @@
   <ol>
     <li>
       <span>常规方式</span>
-      <n-code language="js" :code='`let myCars = new Array();
+      <n-code word-wrap language="js" :code='`let myCars = new Array();
 myCars[0] = "Saab";      
 myCars[1] = "Volvo";
 myCars[2] = "BMW";`'></n-code>
     </li>
     <li>
       <span>简洁方式</span>
-      <n-code language="js" :code='`let myCars = new Array("Saab", "Volvo", "BMW");`'></n-code>
+      <n-code word-wrap language="js" :code='`let myCars = new Array("Saab", "Volvo", "BMW");`'></n-code>
     </li>
     <li>
       <span>字面</span>
-      <n-code language="js" :code='`let myCars = ["Saab", "Volvo", "BMW"];`'></n-code>
+      <n-code word-wrap language="js" :code='`let myCars = ["Saab", "Volvo", "BMW"];`'></n-code>
     </li>
   </ol>
   <h2>访问数组</h2>
-  <n-code language="js" :code='`name = myCars[0];
+  <n-code word-wrap language="js" :code='`name = myCars[0];
 myCars[0] = "Opel";`'></n-code>
 </template>
 

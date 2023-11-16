@@ -3,10 +3,10 @@
   <p>使用 <n-text type="primary">v-model</n-text> 指令进行双向绑定，制作一份实时显示各个表单控件元素中所填数据的问卷。</p>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code show-line-numbers language="html" :code="code1"></n-code>
+      <n-code word-wrap show-line-numbers language="html" :code="code1"></n-code>
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="script">
-      <n-code show-line-numbers language="js" :code="code2"></n-code>
+      <n-code word-wrap show-line-numbers language="js" :code="code2"></n-code>
     </n-tab-pane>
     <n-tab-pane name="fun3" tab="演示效果">
       <div>

@@ -9,7 +9,7 @@
 <template>
   <h1>3.4.1 v-model 指令</h1>
   <p><n-text type="primary">v-bind</n-text> 指令绑定的属性是单向的，变量单向传递到属性中，例如下面的例子</p>
-  <n-code language="html" :code="`<p>Message is: {{ msg }}</p>
+  <n-code word-wrap language="html" :code="`<p>Message is: {{ msg }}</p>
 <input :value='msg'>`"></n-code>
   <p>Message is: {{ msg }}</p>
   <input :value="msg">
@@ -19,10 +19,10 @@
   <p>例如有下述<n-text code>&lt;input&gt;</n-text>标签</p>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code language="html" :code="code1"></n-code>
+      <n-code word-wrap language="html" :code="code1"></n-code>
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="script">
-      <n-code language="js" :code="`<script setup>
+      <n-code word-wrap language="js" :code="`<script setup>
 import { ref } from 'vue';
 
 const message = ref('')
@@ -36,10 +36,10 @@ const message = ref('')
   <p>或是<n-text code>&lt;textarea&gt;</n-text>标签</p>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code language="html" :code="code2"></n-code>
+      <n-code word-wrap language="html" :code="code2"></n-code>
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="script">
-      <n-code language="js" :code="`<script setup>
+      <n-code word-wrap language="js" :code="`<script setup>
 import { ref } from 'vue';
 
 const mulMessage = ref('')
@@ -55,10 +55,10 @@ const mulMessage = ref('')
   <p>或是<n-text code>&lt;select&gt;</n-text>标签</p>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code language="html" :code="code3"></n-code>
+      <n-code word-wrap language="html" :code="code3"></n-code>
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="script">
-      <n-code language="js" :code="`<script setup>
+      <n-code word-wrap language="js" :code="`<script setup>
 import { ref } from 'vue';
 
 const selected = ref('')

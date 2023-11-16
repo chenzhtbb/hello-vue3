@@ -5,7 +5,7 @@
   <n-blockquote>回调函数：把一段可执行的代码像参数传递那样传给其他代码，而这段代码会在某个时刻被调用执行，这就叫做回调。如果代码立即被执行就称为同步回调，如果在之后晚点的某个时间再执行，则称之为异步回调。</n-blockquote>
   <n-tabs>
     <n-tab-pane name="fun1" tab="template">
-      <n-code show-line-numbers language="html" :code="`<template>
+      <n-code word-wrap show-line-numbers language="html" :code="`<template>
   <p>num：{{ data.num }}</p>
   <button @click='data.num--'>num --</button>
   <button @click='data.num++'>num ++</button>
@@ -16,7 +16,7 @@
 </template>`"></n-code>
     </n-tab-pane>
     <n-tab-pane name="fun2" tab="script">
-      <n-code show-line-numbers language="js" :code="`<script setup>
+      <n-code word-wrap show-line-numbers language="js" :code="`<script setup>
 import { reactive, ref, watch } from 'vue';
 
 const data = reactive({

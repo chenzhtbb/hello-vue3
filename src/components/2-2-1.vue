@@ -8,7 +8,7 @@
 -->
 <template>
   <h1>2.2.1 构建 Vue 3.0 项目</h1>
-  <n-code show-line-numbers language="bash" :code="`
+  <n-code word-wrap show-line-numbers language="bash" :code="`
 # 打开 CMD 查看 node 和 npm 的版本号，有显示则表明 node 安装正确
 node -v
 npm -v

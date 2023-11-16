@@ -13,9 +13,9 @@
   <p>当它们同时存在于一个节点上时，<n-text type="primary">v-if</n-text> 比 <n-text type="primary">v-for</n-text> 的优先级更高。这意味着 <n-text
       type="primary">v-if</n-text>
     的条件将无法访问到 <n-text type="primary">v-for</n-text> 作用域内定义的变量别名：</p>
-  <n-code language="html" :code="code1"></n-code>
+  <n-code word-wrap language="html" :code="code1"></n-code>
   <p>在外新包装一层 &lt;template&gt; 再在其上使用 <n-text type="primary">v-for</n-text> 可以解决这个问题 (这也更加明显易读)：</p>
-  <n-code language="html" :code="code2"></n-code>
+  <n-code word-wrap language="html" :code="code2"></n-code>
 </template>
 
 <script setup>

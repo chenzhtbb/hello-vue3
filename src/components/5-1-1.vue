@@ -11,38 +11,38 @@
     <p>字母过滤器分为 capitalize 过滤器、uppercase 过滤器以及 lowercase 过滤器</p>
     <h2>capitalize 过滤器</h2>
     <p>假设有以下 input 标签使用 v-model 绑定 str1 对象</p>
-    <n-code language="html" :code="code1"></n-code>
+    <n-code word-wrap language="html" :code="code1"></n-code>
     <input type="text" v-model="str1">
     <p>str1: {{ str1 }}</p>
     <p>上方的 v-model 指令等价于下方的 v-bind 和 v-on 指令结合</p>
-    <n-code language="html" :code="code2"></n-code>
+    <n-code word-wrap language="html" :code="code2"></n-code>
     <input type="text" :value="str2" @input="$e => str2 = $e.target.value">
     <p>str2: {{ str2 }}</p>
     <p>为了实现 capitalize 过滤器，应采用修改 v-on 绑定实现</p>
-    <n-code language="html" :code="code3"></n-code>
+    <n-code word-wrap language="html" :code="code3"></n-code>
     <input type="text" :value="str3" @input="$e => str3 = capitalize($e.target.value)">
     <p>str3: {{ str3 }}</p>
     <p>str3 被赋值前首先会经过一个函数进行处理，这个函数 capitalize 实现了过滤器功能，将首字母过滤为大写字母。</p>
     <p>函数 capitalize 的实现如下：</p>
-    <n-code language="js" :code="code4"></n-code>
+    <n-code word-wrap language="js" :code="code4"></n-code>
 
     <h2>uppercase 过滤器</h2>
     <p>为了实现 uppercase 过滤器，应采用修改 v-on 绑定实现</p>
-    <n-code language="html" :code="code5"></n-code>
+    <n-code word-wrap language="html" :code="code5"></n-code>
     <input type="text" :value="str4" @input="$e => str4 = uppercase($e.target.value)">
     <p>str4: {{ str4 }}</p>
     <p>str4 被赋值前首先会经过一个函数进行处理，这个函数 uppercase 实现了过滤器功能，将首字母过滤为大写字母。</p>
     <p>函数 uppercase 的实现如下：</p>
-    <n-code language="js" :code="code6"></n-code>
+    <n-code word-wrap language="js" :code="code6"></n-code>
     
     <h2>lowercase 过滤器</h2>
     <p>为了实现 lowercase 过滤器，应采用修改 v-on 绑定实现</p>
-    <n-code language="html" :code="code7"></n-code>
+    <n-code word-wrap language="html" :code="code7"></n-code>
     <input type="text" :value="str5" @input="$e => str5 = lowercase($e.target.value)">
     <p>str5: {{ str5 }}</p>
     <p>str5 被赋值前首先会经过一个函数进行处理，这个函数 lowercase 实现了过滤器功能，将首字母过滤为大写字母。</p>
     <p>函数 lowercase 的实现如下：</p>
-    <n-code language="js" :code="code8"></n-code>
+    <n-code word-wrap language="js" :code="code8"></n-code>
 </template>
 
 <script setup>

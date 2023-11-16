@@ -15,9 +15,9 @@
     <n-button @click="dialog2('按下 2s 后弹窗')">按下 2s 后弹窗</n-button>
 
     <p>debounce 过滤器的实现如下：</p>
-    <n-code language="js" :code="code1"></n-code>
+    <n-code word-wrap language="js" :code="code1"></n-code>
     <p>在 Vue 中的调用方式如下：</p>
-    <n-code language="js" :code="code2"></n-code>
+    <n-code word-wrap language="js" :code="code2"></n-code>
 </template>
 
 <script setup>
