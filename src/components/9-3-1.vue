@@ -21,6 +21,13 @@ export const useStore = defineStore('storeId', () => {
     const isAdmin = ref(true)
     const items = ref([])
     const hasChanged = ref(true)
+    return {
+        count,
+        name,
+        isAdmin,
+        items,
+        hasChanged
+    }
 })`
 const code2 = `const store = useStore()
 
