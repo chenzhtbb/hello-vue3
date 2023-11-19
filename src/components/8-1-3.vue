@@ -1,6 +1,9 @@
 <template>
     <h1>8.1.3 跳转</h1>
     <p>vue-router 提供了一个组件用于显示路由渲染的内容 router-view ，路由行为只在这个标签中发生，且需要配合路由跳转使用。</p>
+    <n-alert title="请注意" type="warning">
+        <p>必须使用 router-view 组件渲染路由，如果没有该组件，路由是不会显示的！</p>
+    </n-alert>
     <p>vue-router 提供了两种方式进行路由跳转：</p>
     <h2>1. 使用 router-link 组件</h2>
     <p>router-link 组件是 vue-router 提供的一个组件，它会被渲染成一个 a 标签，它的使用方式如下：</p>

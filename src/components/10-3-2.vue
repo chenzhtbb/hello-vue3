@@ -20,7 +20,7 @@ defineOptions({
 })
 
 const code1 = `location /[path] {
-    try_files $uri $uri/ [path]/index.html
+    try_files $uri $uri/ /[path]/index.html;
 }`
 
 </script>

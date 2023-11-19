@@ -4,6 +4,9 @@
     <p>其中，/profile 是 /user 的子路由。定义方式如下：</p>
     <n-code word-wrap language="js" :code="code1"></n-code>
     <p>此外，还需要在 User 组件中 再写一个 router-view 标签。User 组件内部的路由渲染组件将渲染定义的嵌套路由。</p>
+    <n-alert title="请注意" type="warning">
+        <p>嵌套路由的<n-text code> path </n-text>不能以<n-text code> / </n-text>开头</p>
+    </n-alert>
 </template>
 
 <script setup>
